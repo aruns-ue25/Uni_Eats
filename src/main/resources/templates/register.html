@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - UniEats</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <i class="fas fa-utensils me-2"></i>UniEats
+            </a>
+            
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="/">
+                    <i class="fas fa-home me-1"></i>Home
+                </a>
+                <a class="nav-link" href="/login">
+                    <i class="fas fa-sign-in-alt me-1"></i>Login
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Registration Choice -->
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-8">
+                <div class="text-center mb-5">
+                    <h1 class="display-4 fw-bold text-primary">Join Our Platform</h1>
+                    <p class="lead text-muted">Choose how you want to participate in our food ecosystem</p>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Customer Registration Card -->
+                    <div class="col-md-6">
+                        <div class="card h-100 shadow-lg border-0">
+                            <div class="card-body text-center p-5">
+                                <div class="mb-4">
+                                    <i class="fas fa-user fa-4x text-primary"></i>
+                                </div>
+                                <h3 class="card-title fw-bold mb-3">I'm a Customer</h3>
+                                <p class="card-text text-muted mb-4">
+                                    Order delicious food from multiple restaurants and enjoy fast delivery to your doorstep.
+                                </p>
+                                
+                                <div class="mb-4">
+                                    <h6 class="fw-bold text-success">Customer Benefits:</h6>
+                                    <ul class="list-unstyled text-start">
+                                        <li><i class="fas fa-check text-success me-2"></i>Browse multiple restaurants</li>
+                                        <li><i class="fas fa-check text-success me-2"></i>Fast delivery service</li>
+                                        <li><i class="fas fa-check text-success me-2"></i>Secure payments</li>
+                                        <li><i class="fas fa-check text-success me-2"></i>Order tracking</li>
+                                        <li><i class="fas fa-check text-success me-2"></i>Special offers</li>
+                                    </ul>
+                                </div>
+                                
+                                <a href="/register/customer" class="btn btn-primary btn-lg w-100">
+                                    <i class="fas fa-user-plus me-2"></i>Register as Customer
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Shop Registration Card -->
+                    <div class="col-md-6">
+                        <div class="card h-100 shadow-lg border-0">
+                            <div class="card-body text-center p-5">
+                                <div class="mb-4">
+                                    <i class="fas fa-store fa-4x text-warning"></i>
+                                </div>
+                                <h3 class="card-title fw-bold mb-3">I'm a Restaurant</h3>
+                                <p class="card-text text-muted mb-4">
+                                    Join our platform to reach more customers and grow your food business with our delivery network.
+                                </p>
+                                
+                                <div class="mb-4">
+                                    <h6 class="fw-bold text-warning">Restaurant Benefits:</h6>
+                                    <ul class="list-unstyled text-start">
+                                        <li><i class="fas fa-check text-warning me-2"></i>Reach more customers</li>
+                                        <li><i class="fas fa-check text-warning me-2"></i>Easy order management</li>
+                                        <li><i class="fas fa-check text-warning me-2"></i>Delivery support</li>
+                                        <li><i class="fas fa-check text-warning me-2"></i>Analytics dashboard</li>
+                                        <li><i class="fas fa-check text-warning me-2"></i>Marketing tools</li>
+                                    </ul>
+                                </div>
+                                
+                                <a href="/register/shop" class="btn btn-warning btn-lg w-100">
+                                    <i class="fas fa-store me-2"></i>Register as Restaurant
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Info -->
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <div class="card bg-light border-0">
+                            <div class="card-body text-center py-4">
+                                <h5 class="fw-bold mb-3">
+                                    <i class="fas fa-shield-alt text-primary me-2"></i>
+                                    Why Choose Our Platform?
+                                </h5>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <i class="fas fa-lock fa-2x text-primary mb-2"></i>
+                                        <h6>Secure & Safe</h6>
+                                        <p class="small text-muted">Your data and payments are protected</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <i class="fas fa-clock fa-2x text-primary mb-2"></i>
+                                        <h6>24/7 Support</h6>
+                                        <p class="small text-muted">Round-the-clock customer service</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <i class="fas fa-mobile-alt fa-2x text-primary mb-2"></i>
+                                        <h6>Mobile Friendly</h6>
+                                        <p class="small text-muted">Access from any device, anywhere</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Login Link -->
+                <div class="text-center mt-4">
+                    <p class="mb-0">Already have an account?</p>
+                    <a href="/login" class="btn btn-outline-primary">
+                        <i class="fas fa-sign-in-alt me-2"></i>Sign In
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4 mt-5">
+        <div class="container">
+            <div class="text-center">
+                <p>&copy; 2024 FoodOrder System. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
