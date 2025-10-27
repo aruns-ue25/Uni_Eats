@@ -1,5 +1,8 @@
 package org.example.service;
 
+// Member: Piranavan - Order management
+// Related database tables: orders and order item tables
+
 import org.example.model.*;
 import org.example.repository.OrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,11 +24,7 @@ public class OrderService {
     @Autowired
     private ActivityLogService activityLogService;
     
-    @Autowired
-    private CustomerService customerService;
-    
-    @Autowired
-    private ShopService shopService;
+    // Removed unused injected services
     
     public Order createOrder(Order order) {
         Order savedOrder = orderRepository.save(order);
